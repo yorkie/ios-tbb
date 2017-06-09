@@ -1,6 +1,6 @@
 # TBB for iOS and its Simulators
 
-TBB is Interl(R) Threading Building Blocks C++ library for parallel programming. This
+TBB is Intel(R) Threading Building Blocks C++ library for parallel programming. This
 repository is inspired by the [@turbulenz](https://github.com/turbulenz)'s [tbb-ios](https://github.com/turbulenz/tbb-ios).
 
 ## Getting Started
