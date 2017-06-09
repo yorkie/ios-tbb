@@ -57,11 +57,7 @@ endif
 
 ifeq (ios,$(target))
   ifneq (armv7, $(arch))
-    ifneq (i386, $(arch))
-      $(error $(arch) not supported for target 'ios')
-    else
-      SDKROOT?=$(shell xcodebuild -sdk -version | grep -o -E '/.*SDKs/iPhoneSimulator.*' 2>/dev/null)
-    endif
+    SDKROOT?=$(shell xcodebuild -sdk -version | grep -o -E '/.*SDKs/iPhoneSimulator.*' 2>/dev/null)
   else
     SDKROOT?=$(shell xcodebuild -sdk -version | grep -o -E '/.*SDKs/iPhoneOS.*' 2>/dev/null)
   endif
